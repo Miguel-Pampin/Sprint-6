@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-escena',
-  templateUrl: './escena.component.html',
-  styleUrls: ['./escena.component.css']
+  template: `
+    <ul  style="list-style:none">
+      <li *ngFor="let frase of frases">{{ frase }}</li>
+    </ul>
+  `
 })
 export class EscenaComponent {
-
+  @Input() frases: string[] | undefined;
 }
+

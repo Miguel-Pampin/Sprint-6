@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { EscenaComponent } from './components/escena/escena.component';
@@ -12,7 +12,8 @@ import { EscenaComponent } from './components/escena/escena.component';
     EscenaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
