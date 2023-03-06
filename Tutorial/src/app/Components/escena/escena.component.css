@@ -1,1 +1,12 @@
 
+.li
+{
+ font-size:larger;
+  text-align: center;
+list-style: none;
+margin:1em;
+padding: 0.5em;
+border: rgb(22, 21, 21) 2px solid;
+border-radius: 25px;
+
+}
