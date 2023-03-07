@@ -1,0 +1,15 @@
+    <div class="row  ">
+        <div class=" container-fluid">
+            <button  (click)="prev()" class="btn btn-light col-md-6 m-0 p-0">Anterior</button>
+            <button (click)="next()" class="btn btn-light col-md-6 m-0 p-0" >Següent</button>
+        </div>
+        <ul>
+            <p *ngFor="let datos of historia ; let i = index"  [ngStyle]="{backgroundColor: currentSentence == i ? 'rgb(240,128,128)' : 'rgba(255,255,255,0.6)'}" class="align-middle border border-dark border-3 rounded-pill m-3 p-2">
+            {{datos.texto}}
+        
+            </p>
+        </ul>
+  
+      
+    </div>
+

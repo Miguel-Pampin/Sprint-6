@@ -1,18 +1,35 @@
 import { Component, Input } from '@angular/core';
-
+import { Historia } from '../../interface/interface';
 
 
 @Component({
   selector: 'app-escena',
-  template: `
-    <ul  >
-      <li  *ngFor="let frase of frases" [ngClass]={li:frase}>
- {{ frase }}</li>
-    </ul>
-  `,
+  templateUrl: './escena.component.html',
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent {
-  @Input() frases: string[] | undefined;
+  @Input() historia: Historia[] = [];
+
+
+  currentSentence = 0;
+  prev() {
+    if (this.currentSentence == 0) {
+      this.currentSentence = this.historia.length - 1;
+
+    } else {
+      this.currentSentence--;
+    }
+
+  }
+
+  next() {
+    if (this.currentSentence == this.historia.length-1) {
+      this.currentSentence=== 0;
+    } else {
+      this.currentSentence++;
+    }
+  }
+
+
 }
 
