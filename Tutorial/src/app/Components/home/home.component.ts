@@ -1,4 +1,4 @@
-import { Component,EventEmitter, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Historia } from '../../interface/interface';
 
 @Component({

@@ -1,5 +1,10 @@
-
-<div  >
+<div class="d-flex justify-content-center vh-100 w-100 " *ngIf="!mostrar" >
+        <div class="d-flex  flex-column  justify-content-center align-items-center">
+            <p> Benvinguts a l'aventura que ens porta el nostre superheroi Monteserín</p>
+    <button (click)="comenzar()" class=" btn btn-primary rounded-circle">COMENZAR</button>
+</div>
+</div>
+<div  *ngIf="mostrar">
     <app-escena [historia]="historia"></app-escena>
 </div>
 
