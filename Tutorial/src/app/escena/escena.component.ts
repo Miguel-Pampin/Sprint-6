@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Historia } from '../../app/interface/interface';
+import { historia } from '../../app/interface/interface';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { Historia } from '../../app/interface/interface';
   styleUrls: ['./escena.component.css']
 })
 export class EscenaComponent {
-  @Input() historia: Historia[] = [];
+  @Input() historia: historia[] = [];
 
 
   currentSentence = 0;

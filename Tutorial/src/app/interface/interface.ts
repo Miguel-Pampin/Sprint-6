@@ -1,4 +1,4 @@
-export interface Historia {
+export interface historia {
   texto: string,
   img: string,
 }

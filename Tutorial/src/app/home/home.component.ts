@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Historia } from '../../../src/app/interface/interface';
+import { historia } from '../../../src/app/interface/interface';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +13,7 @@ export class HomeComponent {
         this.mostrar = !this.mostrar;
 
     }
-  historia:Historia[] = [
+  historia:historia[] = [
     {
         texto:"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
         img:".../../../assets/1.jpg"
