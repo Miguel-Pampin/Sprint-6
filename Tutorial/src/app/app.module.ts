@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { EscenaComponent } from './components/escena/escena.component';
+import { HomeComponent } from './home/home.component';
+import { EscenaComponent } from './escena/escena.component';
 
 @NgModule({
   declarations: [

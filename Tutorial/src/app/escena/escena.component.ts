@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Historia } from '../../interface/interface';
+import { Historia } from '../../app/interface/interface';
 
 
 @Component({
@@ -23,8 +23,8 @@ export class EscenaComponent {
   }
 
   next() {
-    if (this.currentSentence == this.historia.length-1) {
-      this.currentSentence=== 0;
+    if (this.currentSentence == this.historia.length - 1) {
+      this.currentSentence == 0;
     } else {
       this.currentSentence++;
     }
